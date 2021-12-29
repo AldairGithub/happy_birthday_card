@@ -1,38 +1,94 @@
-.App {
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  background: #3E92CC;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card {
+  background-color: #fdfdfd;
+  border-radius: 4px;
+  height: 85vh;
+  width: 85vw;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1em;
+  overflow: hidden;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.hb {
+  max-height: 40vh;
+  max-width: 90vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.text {
+  padding: 1mm;
+}
+
+.text h1 {
+  font-size: 32px;
+  background: -webkit-linear-gradient(top, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 25%,rgba(84,163,238,1) 33%,rgba(54,144,240,1) 70%,rgba(30,105,222,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.signed {
+  clear: left;
+}
+
+.car {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  padding: 16px;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.muted {
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
   }
-  to {
-    transform: rotate(360deg);
+  .hb {
+    width: 100%;
+    max-width: 35vw;
+    max-height: unset;
+  }
+  .text {
+    font-size: small;
   }
 }
