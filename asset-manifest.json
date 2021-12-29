@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/happy_birthday_card/static/css/main.858c768e.css",
+    "main.js": "/happy_birthday_card/static/js/main.e5864231.js",
+    "static/media/happy-birthday.png": "/happy_birthday_card/static/media/happy-birthday.ee6a919ad6146e330391.png",
+    "static/media/gray-car.png": "/happy_birthday_card/static/media/gray-car.630715b9d83de0477571.png",
+    "index.html": "/happy_birthday_card/index.html",
+    "main.858c768e.css.map": "/happy_birthday_card/static/css/main.858c768e.css.map",
+    "main.e5864231.js.map": "/happy_birthday_card/static/js/main.e5864231.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.858c768e.css",
+    "static/js/main.e5864231.js"
+  ]
+}
